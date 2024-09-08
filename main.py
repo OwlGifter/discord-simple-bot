@@ -1,3 +1,3 @@
-import actualbot
+import artbot
 
-actualbot.runBot()
+artbot.runBot()
