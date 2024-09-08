@@ -1,6 +1,6 @@
 this project was meant to randomize roles for a game, it follows set rules, and randomizes it
 
-Below is the role and the options for the role
+Below is the role and the options for the role, unique roles are marked with a *
 
     Town Protective:
     Protector
