@@ -1,0 +1,3 @@
+import actualbot
+
+actualbot.runBot()
