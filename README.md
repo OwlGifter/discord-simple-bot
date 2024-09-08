@@ -1,5 +1,7 @@
 this project was meant to randomize roles for a game, it follows set rules, and randomizes it
+
 Below is the role and the options for the role
+
     Town Protective:
     Protector
     Zealot 
