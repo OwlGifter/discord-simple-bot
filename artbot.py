@@ -1,5 +1,5 @@
 import discord
-token = 'MTI4MDcxNDYyNzg2ODUyODY5Mw.Gqa35L.cudSmR_nG1P7St4cH606Bla2jqfJk7y9_XrcW4'
+token = 'discord token'
 
 def handle_user_messages(msg, user, lst) -> str:
     message = msg.lower()
