@@ -1,3 +1,8 @@
+# this is the unimproved version of the project, made solely for testing
+# as well as learning
+# as such please disreguard issues and rewritten code in here
+# again it was a prototype
+
 import discord
 import random
 
@@ -244,7 +249,7 @@ def runBot():
     async def on_message(message):
         if message.author == client.user:
             return
-        if message.content == '/TOSS':
+        if message.content == '/rand':
             roles = rolesGenerator()
             await message.channel.send(roles)
             print('hmmm')
