@@ -59,7 +59,8 @@ Below is the role and the options for the role
     --------------
     Random Any: any role in the game, except for uniques
 
-below this is the order the bot puts out the random roles
+below this is the order the bot puts out the random roles:
+
     Jailor
     Town Protective
     Town Investigative
@@ -82,11 +83,13 @@ below this is the order the bot puts out the random roles
     -
     Random Any
 
-There are two bots in these files, one is called artbot and the other is called actualbot, ironically the main one used and implemented
-as well as more efficient is artbot, and actualbot is the prototype made with the sole purpose of learning to use the discord library
-this is my first attempt at creating a discord bot and it was successful, im sure more improvements can be made, but as stated earlier
-this bot was created to fulfill a request, as such since the usage will be limited and not used frequently, i believe this will be enough
-for the completion of the request, below are some examples of the bot while running:
+The project includes two bots: "artbot" and "actualbot." Interestingly, the primary bot in use,
+which is more efficient and fully implemented, is artbot. Actualbot, on the other hand, serves 
+as a prototype developed to familiarize myself with the Discord library. This was my first 
+experience creating a Discord bot, and I consider it a success. While there is room for further
+improvement, the bot was specifically designed to meet a request. Given the limited and infrequent
+usage anticipated, I believe the current implementation will sufficiently meet the requirements.
+Below are examples of the bot in action:
 
 ![image](https://github.com/user-attachments/assets/1cba2875-b323-4ecf-9a94-b583c03bb4e4)
 
