@@ -100,3 +100,7 @@ another example can be:
 last example:
 
 ![image](https://github.com/user-attachments/assets/8cdd97f7-3c89-4e26-8951-ec5dc3afe7cb)
+
+
+!!! SET UP REQUIRED!!! :
+to set up this project, you must create your own discord api through [discord developer](https://discord.com/developers/applications)   and create a new bot, get the key for the bot and create a new python file named "keys.py" in which you will have to set up a string with your key, and create a getKey() method that returns your discord key.
