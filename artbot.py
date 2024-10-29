@@ -82,8 +82,9 @@
 
 import discord
 import random
+import keys
 
-token = 'discord token here'
+token = keys.getKey()
 
 def rolesGenerator() -> str:
     roles = 'Jailor \n'
