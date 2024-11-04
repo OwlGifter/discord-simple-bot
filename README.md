@@ -103,4 +103,10 @@ last example:
 
 
 !!! SET UP REQUIRED!!! :
-to set up this project, you must create your own discord api through [discord developer](https://discord.com/developers/applications)   and create a new bot, get the key for the bot and create a new python file named "keys.py" in which you will have to set up a string with your key, and create a getKey() method that returns your discord key. after doing that you will have to import the discord.py library to your python libraries, i recommend using "pip install discord.py" that way you can create your own python environment and pip install it in there, to not install directly onto the python your computer uses for everything.
+to set up this project, you must create your own discord api through [discord developer](https://discord.com/developers/applications)   
+and create a new bot, get the key for the bot and create a new python file named "keys.py"
+in which you will have to set up a string with your key, and create a getKey() method that returns your discord key.
+after doing that you will have to import the discord.py library to your python libraries, i recommend using
+"pip install discord.py" that way you can create your own python environment and pip install it in there,
+to not install directly onto the python your computer uses for everything.To create a python virtual environment
+use the command "python -m venv nameOfEnv" use the command at your own risk.
