@@ -110,3 +110,5 @@ after doing that you will have to import the discord.py library to your python l
 "pip install discord.py" that way you can create your own python environment and pip install it in there,
 to not install directly onto the python your computer uses for everything.To create a python virtual environment
 use the command "python -m venv nameOfEnv" use the command at your own risk.
+
+main command used for the bot will be "/rand" which will run the randomizing order of the bot.

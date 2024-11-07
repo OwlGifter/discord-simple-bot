@@ -133,38 +133,10 @@ def randomizerMethod(options_list, roles, unique_roles = None)-> str:
 
 def randomAny(roles) ->str:
     # randomly chooses a role cetegory to choose the random character from
-    randomNum = random.randint(0,9)
-    if(randomNum < 1):
-        roles = townProtective(roles)
-        return roles
-    elif(randomNum < 2):
-        roles = townInvestigative(roles)
-        return roles
-    elif(randomNum < 3):
-        roles = townSupport(roles)
-        return roles
-    elif(randomNum < 4):
-        roles = townKilling(roles)
-        return roles
-    elif(randomNum < 5):
-        roles = randomTown(roles)
-        return roles
-    elif(randomNum < 6):
-        roles = mafiaKilling(roles)
-        return roles
-    elif(randomNum < 7):
-        roles = mafiaSupport(roles)
-        return roles
-    elif(randomNum < 8):
-        roles = randomMafia(roles)
-        return roles
-    elif(randomNum < 9):
-        roles = randomNeutralEvil(roles)
-        return roles
-    elif(randomNum < 10):
-        roles = randomNeutralKilling(roles)
-        return roles
-    return 'randomAny Did Not Work!!!!!!!!!!!!!!!! \n'
+    FunctionList = [townProtective, townInvestigative, townSupport, townKilling, randomTown, mafiaKilling, mafiaSupport, randomMafia, randomNeutralEvil, randomNeutralKilling]
+    random.shuffle(FunctionList)
+    roles = FunctionList[0](roles)
+    return roles
 
 def randomNeutralKilling(roles) ->str:
     # selects options
@@ -203,21 +175,11 @@ def mafiaKilling(roles) ->str:
     return roles
 
 def randomTown(roles) -> str:
-    randomNum = random.randint(0, 3)
-    if(randomNum < 1):
-        roles = townProtective(roles)
-        return roles
-    elif(randomNum < 2):
-        roles = townInvestigative(roles)
-        return roles
-    elif(randomNum < 3):
-        roles = townSupport(roles)
-        return roles
-    elif(randomNum < 4):
-        roles = townKilling(roles)
-        return roles
-    else:
-        return 'randTown Did Not Work!!!!!! \n'
+    #randomized functions in list and runs the first one.
+    functionList = [townProtective, townInvestigative, townSupport, townKilling]
+    random.shuffle(functionList)
+    roles = functionList[0](roles)
+    return roles
 
 def townKilling(roles) ->str:
     options = ['Vigilante', 'Veteran']
