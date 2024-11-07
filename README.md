@@ -1,5 +1,6 @@
-this project was meant to randomize roles for a game, it follows set rules, and randomizes it
+!!!main command used for the bot will be "/rand" which will run the randomizing order of the bot.!!!
 
+This project was meant to randomize roles for a game, it follows set rules, and randomizes it
 Below is the role and the options for the role, unique roles are marked with a *
 
     Town Protective:
@@ -111,4 +112,4 @@ after doing that you will have to import the discord.py library to your python l
 to not install directly onto the python your computer uses for everything.To create a python virtual environment
 use the command "python -m venv nameOfEnv" use the command at your own risk.
 
-main command used for the bot will be "/rand" which will run the randomizing order of the bot.
+!!!main command used for the bot will be "/rand" which will run the randomizing order of the bot.!!!
