@@ -142,26 +142,24 @@ def randomNeutralKilling(roles) ->str:
     # selects options
     options = ['Waluigi', 'Avenger', 'Berserker', 'BlackWidow', 'Hunter', 'Mad Scientist']
     # selects uniques
-    uniques = ['Waluigi']
+    uniqueOptions = ['Waluigi']
     # runs role randomizer with chosen options
-    roles = randomizerMethod(options, roles, uniques)
+    roles = randomizerMethod(options, roles, uniqueOptions)
     # returns roles selected
     return roles
 
 def randomNeutralEvil(roles) ->str:
     options = ['Rebel Leader', 'Freelancer', 'Lunatic', 'Logician']
-    uniques = ['Rebel Leader']
-    roles = randomizerMethod(options, roles, uniques)
+    uniqueOptions = ['Rebel Leader']
+    roles = randomizerMethod(options, roles, uniqueOptions)
     return roles
 
 def randomMafia(roles) ->str:
-    randomNum = random.randint(0,1)
-    if(randomNum < 1):
-        roles = mafiaSupport(roles)
-        return roles
-    else:
-        roles = mafiaKilling(roles)
-        return roles
+    #randomizes functions in list and runs the first one on the list.
+    functionList = [mafiaSupport, mafiaKilling]
+    random.shuffle(functionList)
+    roles = functionList[0](roles)
+    return roles
 
 def mafiaSupport(roles) -> str:
     options = ['Crooked Lawyer', 'Consort', 'Mole', 'Councillor', 'Consigliere']
@@ -223,6 +221,7 @@ def runBot():
         # ignores if the message is from the bot
         if message.author == client.user:
             return
+        # if message is specified command, it runs our main command
         if message.content == '/rand':
             roles = rolesGenerator()
             await message.channel.send(roles)
